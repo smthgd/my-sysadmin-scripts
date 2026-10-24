@@ -1,0 +1,8 @@
+services:
+  monitor:
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - .:/app
+    command: ["bash", "/app/script.sh"]
