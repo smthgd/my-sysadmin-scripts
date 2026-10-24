@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 readonly N=5
 readonly SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 readonly LOG_FILE="$SCRIPT_DIR/monitor.log"
