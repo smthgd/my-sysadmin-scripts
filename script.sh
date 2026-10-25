@@ -2,7 +2,7 @@
 
 readonly N=5
 readonly SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-readonly LOG_FILE="$SCRIPT_DIR/monitor.log"
+readonly LOG_FILE="${LOG_FILE:-$SCRIPT_DIR/monitor.log}"
 
 for command in free df uptime date sleep; do
     if ! command -v "$command" > /dev/null; then

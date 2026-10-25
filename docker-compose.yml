@@ -4,5 +4,6 @@ services:
       context: .
       dockerfile: dockerfile
     volumes:
-      - .:/app
-    command: ["bash", "/app/script.sh"]
+      - .:/var/www
+    ports:
+      - "8080:8080"
